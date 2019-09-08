@@ -1,0 +1,10 @@
+.bnt1{
+  height: 80rpx;
+  width: 260rpx;
+  background-color: rgb(9, 207, 75);
+  color: #fff;
+
+}
+.bnt1:active{
+  background-color: #838083;
+}

@@ -1,0 +1,14 @@
+.title{
+  text-align: center;
+  font-size: 40rpx;
+  font-weight: 800;
+  line-height: 120rpx;
+  color: rgba(14, 95, 189, 0.534);
+}
+
+
+.box3{
+  font-size: 20px;
+  text-align: center;
+  color: rgb(238, 203, 6)
+}

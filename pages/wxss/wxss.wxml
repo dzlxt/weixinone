@@ -1,0 +1,15 @@
+<!--pages/wxss/wxss.wxml-->
+<text class="title">wxss样式表</text>
+<!-- 1 、行内样式 以健值对形式 以分号分隔-->
+<view style="font-size:35px; color:red">年怕中秋</view>
+
+<!-- 2 、页内样式 以健值对形式 以分号分隔-->
+<view class="text1">年怕中秋</view>
+
+<!-- 2 、全局样式 以健值对形式 以分号分隔，在app.wxss内写-->
+<view class="box3">年怕中秋</view>
+
+<!-- 2 、wxss中的尺寸单位-->
+<view class="box1"></view>
+<view class="box2"></view>
+<button class="bnt1">按钮</button>

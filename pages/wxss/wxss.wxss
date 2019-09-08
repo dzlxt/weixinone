@@ -1,0 +1,19 @@
+/* pages/wxss/wxss.wxss */
+@import "../stlye/bnt.wxss";
+.text1{
+  font-size: 40px;
+  text-align: center;
+  color: rgb(8, 85, 85);
+}
+
+.box1{
+  height: 200px;
+  width: 200px;
+  background-color: orange
+}
+
+.box2{
+  height: 200rpx;
+  width: 200rpx;
+  background-color: rgb(87, 62, 16)
+}
