@@ -1,0 +1,23 @@
+/* components/menuIcon/menuIcon.wxss */
+
+.top{
+  box-flex: 1.0;
+  box-shadow: 2px 2px 8px #ccc;
+  margin: 30rpx;
+}
+.icon{
+  height: 180rpx;
+  width: 180rpx;
+  
+  
+  }
+
+  .menutext{
+    height: 50rpx;
+    width: 180rpx;
+    text-align: center;
+    border-bottom: 5rpx solid salmon;
+    margin-bottom: 15rpx;
+  }
+
+  

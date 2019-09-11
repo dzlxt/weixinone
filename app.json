@@ -1,7 +1,30 @@
 {
   "pages": [
-    "pages/wxss/wxss",
     "pages/home/home",
+    "pages/wxss/wxss",
     "pages/about/about"
-  ]
+  ],
+  "usingComponents":{
+    "mycpn":"pages/assembly/mycpn"
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "找匠人",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap26.json"
 }

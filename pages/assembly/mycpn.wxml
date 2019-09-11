@@ -1,0 +1,2 @@
+<!--pages/assembly/mycpn.wxml-->
+<text class="logo">{{logoname}}</text>

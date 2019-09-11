@@ -1,0 +1,7 @@
+/* pages/assembly/mycpn.wxss */
+.logo{
+  font-size: 60px;
+  font-weight: 800;
+  color: red;
+  text-align: center;
+}

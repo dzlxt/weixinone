@@ -1,3 +1,13 @@
 <!--pages/home/home.wxml-->
-<view class="title">HELLO WORLD!!</view>
-<button>按钮</button>
+<swiper class="home-swiper" 
+        indicator-dots="true"
+        indicator-color="rgb(255,255,0)"
+        indicator-active-color="#ffffff"
+        autoplay="true"
+        duration="300">
+  <swiper-item></swiper-item>
+  <swiper-item></swiper-item>
+  <swiper-item></swiper-item>
+</swiper>
+<view class="menu"> <menuicon /><menuicon /><menuicon /></view>
+<view class="menu"> <menuicon /><menuicon /><menuicon /></view>
