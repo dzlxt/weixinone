@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/about/about",
     "pages/home/home",
-    "pages/wxss/wxss",
-    "pages/about/about"
+    "pages/wxss/wxss"   
   ],
   "usingComponents":{
     "mycpn":"pages/assembly/mycpn"

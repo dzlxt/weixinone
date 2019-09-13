@@ -7,6 +7,12 @@ Page({
   data: {
 
   },
+  handlesShowTosat:function(){
+    wx.showToast({
+      title: '你好你好你好你好',
+      duration:5000,
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
@@ -61,6 +67,9 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+    return {
+      title: "你好呀，江疏影",
+      path: "pages/home/home"
+    }
   }
 })
