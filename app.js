@@ -11,8 +11,37 @@ App({
   onLaunch: function () {
     const token = wx.getStorageSync(TOKEN)
     if(token && token.length !==0){
-      console.log("执行了---")
-        wx.request({
+      console.log("执行了验证token")
+       this.check_token(token)
+      
+
+    }else{
+    console.log("执行了登录")
+    this.login()
+  }
+  },
+login(){
+  wx.login({
+    success: (res) => {
+      const code = res.code;
+      wx.request({
+        url: 'http://123.207.32.32:3000/login',
+        method: "post",
+        data: {
+          code
+        },
+        success: (res) => {
+          const token = res.data.token;
+          this.globalData.token = token;
+          wx.setStorageSync(TOKEN, token)
+        }
+      })
+    }
+  })
+},
+
+check_token(token){
+   wx.request({
           url: 'http://123.207.32.32:3000/auth',
           method:'post',
           header:{
@@ -25,28 +54,5 @@ App({
             console.log(res)
           }
         })
-      
-
-    }else{
-    console.log("执行了dengl")
-    wx.login({
-      success: (res)=>{
-        const code = res.code;
-        wx.request({
-          url: 'http://123.207.32.32:3000/login',
-          method:"post",
-          data:{
-            code
-          },
-          success:(res)=>{
-          const token = res.data.token;
-          this.globalData.token = token;
-            wx.setStorageSync(TOKEN, token)
-          }
-        })
-      }
-    })
-  }
-  },
-
+}
 })
